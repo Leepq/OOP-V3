@@ -11,7 +11,8 @@ To:
 // Create type aliases
 using FreightStorage = Storage<Freight>;
 using CargoStorage = Storage<Cargo>;
-
+```
+```
 /OOP-V3 Directory
 ├── Transport.h/.cpp
 ├── Freight.h/.cpp
