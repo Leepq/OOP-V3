@@ -4,12 +4,16 @@
 #include <cctype>
 #include <algorithm>
 #include <sstream>
-#include "FreightStorage.h"
-#include "CargoStorage.h"
 #include "Matcher.h"
 #include "MatchedStorage.h"
 #include "Cargo.h"
 #include "Freight.h"
+#include "Storage.h"
+
+// Create type aliases
+using FreightStorage = Storage<Freight>;
+using CargoStorage = Storage<Cargo>;
+
 
 using namespace std;
 
@@ -86,8 +90,8 @@ int main() {
     MatchedStorage matchedStorage;
     vector<string> unmatchedFreights, unmatchedCargos;
 
-    freightStorage.loadFreightFromFile("Freight.txt");
-    cargoStorage.loadCargoFromFile("Cargo.txt");
+    freightStorage.loadFromFile("Freight.txt");
+    cargoStorage.loadFromFile("Cargo.txt");
 
     string command;
     int option;
@@ -137,7 +141,7 @@ int main() {
 
             try {
                 Cargo c(id, location, time);
-                cargoStorage.addCargo(c);
+                cargoStorage.addCargo(c); //addCargo to addItem?
             }
             catch (const exception& e) {
                 cout << "Error adding cargo: " << e.what() << endl;
@@ -219,7 +223,7 @@ int main() {
 
             try {
                 Freight f(id, location, time);
-                freightStorage.addFreight(f);
+                freightStorage.addFreight(f); //addFreight to addItem?
             }
             catch (const exception& e) {
                 cout << "Error adding freight: " << e.what() << endl;
