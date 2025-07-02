@@ -1,4 +1,18 @@
 # OOP-V3 - Forked from OOP-V2 by jullion14
+```bash
+delete FreightStorage and CargoStorage .h and .cpp files, replace lines
+#include "FreightStorage.h"
+#include "CargoStorage.h"
+To:
+#include "Freight.h"
+#include "Cargo.h"
+#include "Storage.h"
+
+// Create type aliases
+using FreightStorage = Storage<Freight>;
+using CargoStorage = Storage<Cargo>;
+
+```
 # OOP-V2 – Cargo & Freight Matching Simulator
 
 > A small C++ console application that demonstrates clean object-oriented design while tackling a realistic logistics problem: **matching pieces of cargo with available freight capacity and producing a shipping schedule**.
