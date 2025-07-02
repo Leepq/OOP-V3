@@ -1,3 +1,4 @@
+# OOP-V3 - Forked from OOP-V2 by jullion14
 # OOP-V2 – Cargo & Freight Matching Simulator
 
 > A small C++ console application that demonstrates clean object-oriented design while tackling a realistic logistics problem: **matching pieces of cargo with available freight capacity and producing a shipping schedule**.
