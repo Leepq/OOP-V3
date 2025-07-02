@@ -12,6 +12,14 @@ To:
 using FreightStorage = Storage<Freight>;
 using CargoStorage = Storage<Cargo>;
 
+/OOP-V3 Directory
+├── Transport.h/.cpp
+├── Freight.h/.cpp
+├── Cargo.h/.cpp
+├── Storage.h         <-- generic template header
+├── Storage.tpp       <-- template implementation
+├── main.cpp          <-- includes Storage.h and type aliases
+
 ```
 # OOP-V2 – Cargo & Freight Matching Simulator
 
