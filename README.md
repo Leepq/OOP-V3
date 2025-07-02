@@ -31,6 +31,8 @@ _File map preview_ :contentReference[oaicite:0]{index=0}
 
 * A C++17-capable compiler (GCC 9+, Clang 10+, MSVC 2019).  
 * CMake 3.15+ or just a shell with `g++`/`clang++`.
+* Visual Studio 2022
+* GitHub Desktop
 
 ### 2.  Build & run (one-liner)
 
@@ -39,5 +41,9 @@ g++ -std=c++17 -Wall -Wextra -pedantic -o oop_v2 \
     src/*.cpp
 ./oop_v2
 
+```
+OR
+```bash
+Copy GitHub Repo link and pull. DO NOT COMMIT. 
 ```
 Project done by: jullion14, JunXuanSIT, Kktanker, GhosterRoller and Leepq
