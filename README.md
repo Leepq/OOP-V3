@@ -1,9 +1,10 @@
 # OOP-V3 - Forked from OOP-V2 by jullion14
-```bash
+```
 delete FreightStorage and CargoStorage .h and .cpp files, replace lines
 #include "FreightStorage.h"
 #include "CargoStorage.h"
 To:
+```
 #include "Freight.h"
 #include "Cargo.h"
 #include "Storage.h"
@@ -11,7 +12,7 @@ To:
 // Create type aliases
 using FreightStorage = Storage<Freight>;
 using CargoStorage = Storage<Cargo>;
-
+```
 /OOP-V3 Directory
 ├── Transport.h/.cpp
 ├── Freight.h/.cpp
